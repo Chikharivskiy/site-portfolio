@@ -95,7 +95,7 @@ img {
 }
 
 .wrap-preloader {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
@@ -170,7 +170,7 @@ img {
 .header {
   background-image: url("../img/bg-code.jpg");
   background-size: cover;
-  background-position: cetner center;
+  background-position: center center;
   background-repeat: no-repeat;
   height: 100vh;
 }
