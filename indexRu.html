@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML верстальщик - Чихаривський Максим</title>
+	<link rel="shortcut icon" href="img/title-code.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<script>
+    setTimeout(function(){
+        document.getElementsByClassName('wrap-preloader')[0].classList.add('off-preloader');
+    }, 2000);
+</script>
+<body>
+	
+	<header class="header" id="header">
+        <div class="header-bg">
+                <div class="container">
+                    <div class="header__navMenu">
+                            <div class="header__nav">
+                                <nav class="header__items">
+                                    <a href="#header" class="header__item" id="header">Главная</a>
+                                    <a href="#aboutMe" class="header__item">О себе</a>
+                                    <a href="#myWorks" class="header__item">Мои работы</a>
+                                    <a href="#feedback" class="header__item openModal">Как связаться?</a>
+                                </nav>
+                                <div class="header__buttons">
+                                    <a href="/indexUa.html" class="header__button">UA</a>
+                                    <a href="/indexRu.html" class="header__button header__button-active">RU</a>
+                                    <a href="/indexEn.html" class="header__button">EN</a>
+                                </div>
+                            </div>
+                            <div class="header__menu">
+                                <img src="img/hamburger-menu.svg" alt="hamburgerMenu">
+                            </div>
+                    </div>
+                </div>
+                <div class="header__main">
+                    <div class="header__name">Чихаривський Максим</div>
+                    <div class="header__development">HTML верстальщик</div>
+                    <a href="#aboutMe" class="header__arrowDown">
+                        <img src="/img/arrow-down.svg" alt="arrow-down">
+                    </a>
+                </div>
+        </div>
+    </header>
+    
+    <main class="main">
+        <section class="about" id="aboutMe">
+            <div class="container">
+                <h2 class="about__h2">О себе</h2>
+                <div class="about__me">
+                    <img src="img/I_am.png" alt="about-me" class="about__img">
+                    <p class="about__p">Здравствуйте, как меня зовут вы уже знаете из первой страницы на сайте.
+                        Также знаете чем я занимаюсь. А если не знаете, так вот, зовут меня Чихаривський Максим,
+                        я верстаю сайты по PSD макатам. Связаться со мной можно удобным для вас способом по
+                        навигации выше. Или нажать на <a href="#feedback" class="about__link">связаться</a>.</p>
+                </div>
+                <div class="about__work">
+                    <h3 class="about__h3">Для тех кому интересно, как я верстаю сайты.</h3>
+                    <p class="about__p">В своей работе использую редактор VS Code. HTML, HTML5
+                        для разметки страницы, CSS, CSS3 для оформления страницы вместе с Sass,
+                        JavaScript для интерактивности страницы. При завершении работы сжимаю все
+                        файлы и изображения для быстродействия сайта. Также проверяю скорость сайта на
+                        Google Page Speed. На выходе, сайт одинаково отображается в разных
+                        браузерах (кроссбраузерность), а также подстраивается под различные размеры экрана,
+                        то есть отражается как и на компьютерах так и на смартфонах
+                        или планшетах(адаптивность).</p>
+                </div>
+            </div>
+        </section>
+        <!-- about -->
+        <section class="myWorks" id="myWorks">
+            <div class="container">
+                <h2 class="myWorks__h2">Мои работы</h2>
+                <div class="myWorks__items">
+                    <p class="myWorks__p">Пусто</p>
+                </div>
+            </div>
+        </section>
+        <!-- my-works -->
+        <section class="feedback" id="feedback">
+            <div class="container">
+                <h2 class="feedback__h2">Как связаться?</h2>
+                <p class="feedback__p">Если у вас другой часовой пояс я буду подстраиваться под него.</p>
+                <div class="feedback__contactAndForm">
+                    <div class="feedback__contact">
+                        <h3 class="feedback__h3">Контакты</h3>
+                        <div class="feedback__social">
+                            <img src="img/envelope.svg" alt="mail" class="feedback__icon">
+                            <div class="feedback__info">
+                                <div class="feedback__data">E-mail</div>
+                                <a href="mailto:maks9997777@gmail.com" class="feedback__link">maks9997777@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="feedback__social">
+                            <img src="img/facebook.svg" alt="facebook" class="feedback__icon">
+                            <div class="feedback__info">
+                                <div class="feedback__data">Facebook</div>
+                                <a href="https://www.facebook.com/mchikharivskiy" class="feedback__link">Максим Чихаривський</a>
+                            </div>
+                        </div>
+                        <div class="feedback__social">
+                            <img src="img/vk.svg" alt="vk" class="feedback__icon">
+                            <div class="feedback__info">
+                                <div class="feedback__data">Вконтакте</div>
+                                <a href="https://vk.com/maksch14" class="feedback__link">Максим Чихаривський</a>
+                            </div>
+                        </div>
+                        <div class="feedback__social">
+                            <img src="img/skype.svg" alt="mail" class="feedback__icon">
+                            <div class="feedback__info">
+                                <div class="feedback__data">Skype</div>
+                                <a href="skype:maxym05051?call" class="feedback__link">maxym05051</a>
+                            </div>
+                        </div>
+                        <div class="feedback__social">
+                            <img src="img/phone-call.svg" alt="mail" class="feedback__icon">
+                            <div class="feedback__info">
+                                <div class="feedback__data">Телефон</div>
+                                <a href="tel:380970745855" class="feedback__link">+380 97 074 58 55</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__form">
+                        <form id="contactForm" action="handler.php" method="post">
+                            <div class="feedback__group">
+                                <label for="name" class="feedback__label">Имя</label>
+                                <input type="text" class="feedback__input" id="name">
+                            </div>
+                            <div class="feedback__group">
+                                <label for="mail" class="feedback__label">E-mail</label>
+                                <input type="email" class="feedback__input" id="mail">
+                            </div>
+                            <div class="feedback__group">
+                                <label for="message" class="feedback__label">Сообщение</label>
+                                <textarea type="text" class="feedback__textarea" id="message"></textarea>
+                            </div>
+                            <button type="submit" class="feedback__button button">Отправить сообщение</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- feedback__contactAndForm -->
+            </div>
+        </section>
+        <!-- feedback -->
+        <a href="#header" class="arrow-up">
+            <img src="img/arrow-up.svg" class="arrow-up__img" alt="arrow-up">
+        </a>
+        <!-- arrow-up -->
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copyright">© 2019 Максим Чихаривський</div>
+        </div>
+    </footer>
+
+    <div class="wrap-preloader">
+        <span class="preloader anim-prel-1"></span>
+        <span class="preloader anim-prel-2"></span>
+        <span class="preloader anim-prel-3"></span>
+    </div>
+    <!-- preloader -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/wow.min.js"></script>
+<script> new WOW().init(); </script>
+</body>
+</html>

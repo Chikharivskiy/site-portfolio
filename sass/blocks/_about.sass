@@ -1,0 +1,73 @@
+.about
+    background-color: #f2f2f2
+    color: #222
+    padding-top: 80px
+    &__h2
+        margin: 0
+        text-align: center
+        text-transform: uppercase
+        font-size: 26px
+        font-family: 'Qanelas Bold'
+    &__me
+        display: grid
+        grid-template-columns: 120px 500px
+        grid-column-gap: 20px
+        padding: 40px
+    &__p
+        margin-top: 30px
+        font-family: 'Qanelas Bold'
+        font-size: 17px
+        line-height: 26px
+        &:first-letter
+            padding-left: 15px
+    &__work
+        display: grid
+        grid-template-columns: 600px
+        justify-content: end
+        padding-top: 10px
+    &__h3
+        margin: 0
+        font-size: 20px
+        font-family: 'Qanelas Bold'
+        text-align: center
+
+@media(max-width: 991px)
+    .about
+        &__work
+           justify-content: center
+           text-align: center
+
+@media(max-width: 768px)
+    .about
+        &__me
+            grid-template-columns: 120px auto
+            padding: 40px 40px 40px 0
+        &__work
+            grid-template-columns: auto
+            padding: 0 40px
+        &__h3
+            font-size: 19px
+        &__p
+            font-size: 16px
+
+@media(max-width: 506px)
+    .about
+        &__me
+            grid-template-columns: auto
+            justify-content: center
+            text-align: center
+            padding: 30px 40px 40px 40px
+        &__img
+            max-width: 150px
+            justify-self: center
+
+@media(max-width: 462px)
+    .about
+        &__me
+            padding: 25px 0
+        &__work
+            padding: 0
+        &__h3
+            font-size: 18px
+        &__p
+            font-size: 15px

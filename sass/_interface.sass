@@ -1,0 +1,62 @@
+body
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: 'Ubuntu Regular'
+    color: #ffffff
+img
+    width: 100%
+.button
+    width: 100%
+    font-family: 'Ubuntu Bold'
+    color: #fff
+    background-color: #222222
+    border: none
+    border-radius: 2px
+    font-size: 20px
+    padding: 16px 0
+    cursor: pointer
+    outline: none
+.bg
+    background-color: rgba(0,0,0,0.9)
+    padding: 38px 0
+    box-shadow: 0 5px 5px rgba(0,0,0,0.9)
+    display: flex
+    align-items: center
+    z-index: 9
+.wrap-preloader
+    position: absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+    background-color: #000
+    transition: 0.4s
+    z-index: 12
+    opacity: 1
+    display: grid
+    grid-template-columns: auto auto auto
+    grid-column-gap: 10px
+    justify-content: center
+    align-items: center
+.off-preloader
+    z-index: -2
+    opacity: 0
+.preloader
+    width: 10px
+    height: 10px
+    background-color: #fff
+    border-radius: 50%
+.anim-prel-1
+    animation: preloader 0.6s linear alternate infinite
+.anim-prel-2
+    animation: preloader 0.6s linear alternate infinite
+    animation-delay: 0.4s
+.anim-prel-3
+    animation: preloader 0.6s linear alternate infinite
+    animation-delay: 0.8s
+@keyframes preloader
+    from
+        background: #222
+    to
+       background-color: #fff

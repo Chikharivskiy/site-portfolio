@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HTML developer - Chikharivskiy Maksim</title>
+	<link rel="shortcut icon" href="img/title-code.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+</head>
+<script>
+    setTimeout(function(){
+        document.getElementsByClassName('wrap-preloader')[0].classList.add('off-preloader');
+    }, 2000);
+</script>
+<body>
+	
+	<header class="header" id="header">
+        <div class="header-bg">
+                <div class="container">
+                    <div class="header__navMenu">
+                            <div class="header__nav">
+                                <nav class="header__items">
+                                    <a href="#header" class="header__item" id="header">Main</a>
+                                    <a href="#aboutMe" class="header__item">About me</a>
+                                    <a href="#myWorks" class="header__item">My works</a>
+                                    <a href="#feedback" class="header__item openModal">How to contact?</a>
+                                </nav>
+                                <div class="header__buttons">
+                                    <a href="indexUa.html" class="header__button">UA</a>
+                                    <a href="indexRu.html" class="header__button">RU</a>
+                                    <a href="indexEn.html" class="header__button header__button-active">EN</a>
+                                </div>
+                            </div>
+                            <div class="header__menu">
+                                <img src="img/hamburger-menu.svg" alt="hamburgerMenu">
+                            </div>
+                    </div>
+                </div>
+                <div class="header__main">
+                    <div class="header__name">Chikharivskiy Maksim</div>
+                    <div class="header__development">HTML developer</div>
+                    <a href="#aboutMe" class="header__arrowDown">
+                        <img src="/img/arrow-down.svg" alt="arrow-down">
+                    </a>
+                </div>
+        </div>
+    </header>
+    
+    <main class="main">
+        <section class="about" id="aboutMe">
+            <div class="container">
+                <h2 class="about__h2">About me</h2>
+                <div class="about__me">
+                    <img src="img/I_am.png" alt="about-me" class="about__img">
+                    <p class="about__p">Hello everyone, you already know my name from the first page on the site.
+                        You also know what I'm doing. And if you don`t know who I`m, so, call me Chikharivsky Maxim,
+                        I'm developing page from PSD files. contact me you can above on page. Or click on<a href="#feedback" class="about__link"> contacts</a>.</p>
+                </div>
+                <div class="about__work">
+                    <h3 class="about__h3">For those who are interested in how I'm developing the sites.</h3>
+                    <p class="about__p">In my work I`m using the VS Code editor. HTML, HTML5
+                        page layout, CSS, CSS3 to design the page with Sass,
+                        JavaScript for page interactivity. At the end of the work, I squeeze everyone
+                        files and images for the speed of the site. Also check the site speed on
+                        Google Page Speed. At the exit, the site is equally depicted in the sacred
+                        browsers(cross-browser), and also adjusts to different screen sizes,
+                        ie displayed both on computers and on smatrfons
+                        or phone(adaptability).</p>
+                </div>
+            </div>
+        </section>
+        <!-- about -->
+        <section class="myWorks" id="myWorks">
+            <div class="container">
+                <h2 class="myWorks__h2">My works</h2>
+                <div class="myWorks__items">
+                    <p class="myWorks__p">Empty</p>
+                </div>
+            </div>
+        </section>
+        <!-- my-works -->
+        <section class="feedback" id="feedback">
+            <div class="container">
+                <h2 class="feedback__h2">How to contact?</h2>
+                <p class="feedback__p">If you have a different time zone, I will adjust to it.</p>
+                <div class="feedback__contactAndForm">
+                    <div class="feedback__contact">
+                        <h3 class="feedback__h3">Contacts</h3>
+                        <div class="feedback__social">
+                            <img src="img/envelope.svg" alt="mail" class="feedback__icon">
+                            <div class="feedback__info">
+                                <div class="feedback__data">E-mail</div>
+                                <a href="mailto:maks9997777@gmail.com" class="feedback__link">maks9997777@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="feedback__social">
+                            <img src="img/facebook.svg" alt="facebook" class="feedback__icon">
+                            <div class="feedback__info">
+                                <div class="feedback__data">Facebook</div>
+                                <a href="https://www.facebook.com/mchikharivskiy" class="feedback__link">Maksim Chikharivskiy</a>
+                            </div>
+                        </div>
+                        <div class="feedback__social">
+                            <img src="img/vk.svg" alt="vk" class="feedback__icon">
+                            <div class="feedback__info">
+                                <div class="feedback__data">VK</div>
+                                <a href="https://vk.com/maksch14" class="feedback__link">Maksim Chikharivskiy</a>
+                            </div>
+                        </div>
+                        <div class="feedback__social">
+                            <img src="img/skype.svg" alt="mail" class="feedback__icon">
+                            <div class="feedback__info">
+                                <div class="feedback__data">Skype</div>
+                                <a href="skype:maxym05051?call" class="feedback__link">maxym05051</a>
+                            </div>
+                        </div>
+                        <div class="feedback__social">
+                            <img src="img/phone-call.svg" alt="mail" class="feedback__icon">
+                            <div class="feedback__info">
+                                <div class="feedback__data">Phone</div>
+                                <a href="tel:380970745855" class="feedback__link">+380 97 074 58 55</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback__form">
+                        <form id="contactForm" action="handler.php" method="post">
+                            <div class="feedback__group">
+                                <label for="name" class="feedback__label">Name</label>
+                                <input type="text" class="feedback__input" id="name">
+                            </div>
+                            <div class="feedback__group">
+                                <label for="mail" class="feedback__label">E-mail</label>
+                                <input type="email" class="feedback__input" id="mail">
+                            </div>
+                            <div class="feedback__group">
+                                <label for="message" class="feedback__label">Message</label>
+                                <textarea type="text" class="feedback__textarea" id="message"></textarea>
+                            </div>
+                            <button type="submit" class="feedback__button button">Send a message</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- feedback__contactAndForm -->
+            </div>
+        </section>
+        <!-- feedback -->
+        <a href="#header" class="arrow-up">
+            <img src="img/arrow-up.svg" class="arrow-up__img" alt="arrow-up">
+        </a>
+        <!-- arrow-up -->
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__copyright">© 2019 Maksim Chikharivskiy</div>
+        </div>
+    </footer>
+
+    <div class="wrap-preloader">
+        <span class="preloader anim-prel-1"></span>
+        <span class="preloader anim-prel-2"></span>
+        <span class="preloader anim-prel-3"></span>
+    </div>
+    <!-- preloader -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/wow.min.js"></script>
+<script> new WOW().init(); </script>
+</body>
+</html>
